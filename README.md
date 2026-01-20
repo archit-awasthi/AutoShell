@@ -1,4 +1,4 @@
-#AutoShell – Interactive Linux Utility Toolkit (Terminal-based)
+# AutoShell – Interactive Linux Utility Toolkit (Terminal-based)
 
 AutoShell is a menu-driven Linux utility toolkit built using Bash scripting that simplifies common system administration, automation, and DevOps tasks through an interactive terminal interface.
 
