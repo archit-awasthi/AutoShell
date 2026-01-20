@@ -1,4 +1,7 @@
-# AutoShell – Interactive Linux Utility Toolkit (Terminal-based)
+# AutoShell – Interactive Linux Utility Toolkit 
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/359690c4-3706-477a-962f-2ca0355bc166" />
+
 
 AutoShell is a menu-driven Linux utility toolkit built using Bash scripting that simplifies common system administration, automation, and DevOps tasks through an interactive terminal interface.
 
@@ -71,22 +74,9 @@ Check SSH service status
 
 View failed login attempts
 
-🧩 Project Structure
-autoshell/
-├── main.sh
-├── modules/
-│   ├── system.sh
-│   ├── network.sh
-│   ├── automation.sh
-│   ├── devops.sh
-│   └── security.sh
-├── config/
-│   └── autoshell.conf
-├── logs/
-│   └── autoshell.log
-├── docs/
-│   └── usage.md
-└── README.md
+<img width="837" height="425" alt="image" src="https://github.com/user-attachments/assets/c35d04f3-e570-46c0-87df-eff5aa499c5a" />
+
+
 
 🧠 Design Philosophy
 
