@@ -1,5 +1,14 @@
 #!/bin/bash
 
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Source modules
+source "$BASE_DIR/modules/system.sh"
+source "$BASE_DIR/modules/network.sh"
+source "$BASE_DIR/modules/automation.sh"
+source "$BASE_DIR/modules/devops.sh"
+source "$BASE_DIR/modules/security.sh"
+
 pause() {
     read -rp "Press Enter to continue..."
 }
@@ -21,36 +30,16 @@ main_menu() {
         read -rp "Enter your choice: " choice
 
         case "$choice" in
-            1)
-                echo "System & Monitoring module coming soon"
-                pause
-                ;;
-            2)
-                echo "Networking module coming soon"
-                pause
-                ;;
-            3)
-                echo "Automation & Scripting module coming soon"
-                pause
-                ;;
-            4)
-                echo "DevOps Helpers module coming soon"
-                pause
-                ;;
-            5)
-                echo "Security & Permissions module coming soon"
-                pause
-                ;;
-            0)
-                echo "Exiting AutoShell. Goodbye!"
-                exit 0
-                ;;
-            *)
-                echo "Invalid choice. Please try again."
-                pause
-                ;;
+            1) system_menu ;;
+            2) network_menu ;;
+            3) automation_menu ;;
+            4) devops_menu ;;
+            5) security_menu ;;
+            0) echo "Exiting AutoShell. Goodbye!"; exit 0 ;;
+            *) echo "Invalid choice."; pause ;;
         esac
     done
 }
 
 main_menu
+
